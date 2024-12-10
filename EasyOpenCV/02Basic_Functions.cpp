@@ -15,7 +15,7 @@ void main()
 	//转灰度图像
 	cvtColor(img, imgGray, COLOR_BGR2GRAY);
 	//高斯模糊
-	GaussianBlur(img, imgBlur,Size(3,3),5,0);
+	GaussianBlur(imgGray, imgBlur,Size(3,3),5,0);
 	//轮廓检测
 	Canny(imgBlur, imgCanny, 25, 75);
 
